@@ -2116,13 +2116,28 @@
 
 					<div class="col-12">
 						<div class="space md"></div>
-						<button id="sendContactForm" onclick=" return invia_form('contatti_form');" class="btn button-cus md" type="submit">
+						<button id="sendContactForm" onclick=" return myCustomSubmit();" class="btn button-cus md" type="button">
 							SEND							</button>
 					</div>
 				</div>
 				<input type="text" name="fred" id="fred" value="" style="visibility: hidden;">
 				<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
 			</form>			
+  <script>
+    function myCustomSubmit() {
+      alert('subcode');
+      __ss_noform.push(['submit', null, '4a4f29f8-df88-4acd-99e5-7c4075ecefc4']);
+    }
+  </script>
+<script type="text/javascript">
+    var __ss_noform = __ss_noform || [];
+    __ss_noform.push(['baseURI', 'https://app-3QND0JJKY4.marketingautomation.services/webforms/receivePostback/MzawMDEzNTQzAQA/']);
+    __ss_noform.push(['form','contatti_form', '4a4f29f8-df88-4acd-99e5-7c4075ecefc4']);
+    __ss_noform.push(['submitType', 'manual']);
+</script>
+<script type="text/javascript" src="https://koi-3QND0JJKY4.marketingautomation.services/client/noform.js?ver=1.24" ></script>
+
+
 
 			<script src="https://www.google.com/recaptcha/api.js?render=6Lfy1bQUAAAAANXlnqziRNHkVeP_Jxmwgl0Mie9i"></script>
 			<script>
@@ -2502,7 +2517,7 @@
 									<div class="error">The field is empty or the number of characters is less than 3</div>
 								</div>
 								<button class="button-cus color01 sm" type="submit">Search</button>
-							</form>
+              </form>
 						</div>
 					</div>
 				</div>
